@@ -1,0 +1,129 @@
+
+
+<!--footer-->
+<section id="footer" class="footer">
+    <div class="row justify-content-center mx-0 highz">
+        <div class="col-sm-12 blue2">
+           <!--form-->
+            <div class="row justify-content-center high2">
+                <div class="col-sm-8 orange2 rounded-5 p-5">
+                  <div class="row ">
+                      <div class="col-sm-6">
+                          <h1 class="fw-bold mb-5">Join Us <br>and Stay Tuned!</h1>
+                      </div>
+                      <div class="col-sm-6">
+                        <form method="post" action="{% url 'classesenquerydata' %}">
+                         {% csrf_token %}
+                          <div class="row">
+                                <div class="col-sm-4">
+                                    {{ form3.name }}
+                                </div>
+                                <div class="col-sm-4">
+                                    {{ form3.email }}
+                                </div>
+                                <div class="col-sm-4">
+                                    {{ form3.Classes }}
+                                </div>
+                                <div class="col-sm-12 mt-2">
+                                    {{ form3.message }}
+                                </div>
+                            </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <button type="submit"class="text-decoration-none py-1 pe-3 ps-2 bluz rounded-pill border-0">
+                            <span class="me-5 circle3"><i class="fa fa-long-arrow-right blue"></i></span>
+                            <span class="text-white pe-4 fs-5">Join Us</span>
+                        </button>
+                      </div> 
+                    </form> 
+                  </div>
+                </div>
+            </div>
+           <!--form end-->
+           <!--footer-->
+            <div class="row justify-content-center pt-5 ">
+               <div class="col-sm-11">
+                   <div class="row">
+                      <div class="col-sm-4">
+                      <img src="/static/images/logo.png" class="img-fluid">
+                      <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore. </p>	
+                      </div>
+                      <div class="col-sm-4">
+                          <ul class="list-inline">
+                             <li><h6 class="mb-0"><span><i class="fa fa-phone orange fs-5 me-2"></i></span>Call</h6>
+                                 <p class="ps-4">+2 342 5446 67</p>
+                             </li>
+                             <li><h6 class="mb-0"><span><i class="fa fa-clock-o orange fs-5 me-2"></i></span>Work Time</h6>
+                                 <p class="ps-4">Mon-Fri 8AM-5PM</p>
+                             </li>
+                             <li><h6 class="mb-0"><span><i class="fa fa-map-marker orange fs-5 me-2"></i></span>Address</h6>
+                                 <p class="ps-4">Franklin St, Greenpoint Ave</p>
+                             </li>	
+                          </ul>
+                      </div>
+                      <div class="col-sm-4">
+                          <h5>Quick Link</h5>
+                          <ul class="list-inline">
+                            <li><a href="/about/" class="text-decoration-none text-dark">About Us</a></li>
+                            <li><a href="/class/" class="text-decoration-none text-dark">Our Classes</a></li>
+                            <li><a href="/teacher/" class="text-decoration-none text-dark">School Teachers</a></li>
+                            <li><a href="/events/" class="text-decoration-none text-dark">Recent Events</a></li>
+                            <li><a href="/blog/" class="text-decoration-none text-dark">Our News</a></li>
+                          </ul>
+                      </div>	
+                   </div>
+               </div>	
+            </div>
+           <!--footer end-->
+           <!--copyright-->
+            <div class="row justify-content-center pt-5">
+            <div class="col-sm-11 border-top p-3">
+                <div class="row">
+                   <div class="col-sm-10">
+                       <p>&#169 Copyrights 2020 Shelly All rights reserved</p>
+                   </div>
+                   <div class="col-sm-2">
+                        <ul class="list-inline">
+                            <li class="list-inline-item mx-2 circle box move-up"><a href="https://www.facebook.com/" class="text-decoration-none text-white"><i class="fa fa-facebook"></i></a></li>
+                            <li class="list-inline-item mx-2 circle box move-up"><a href="https://www.linkedin.com/" class="text-decoration-none text-white"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="list-inline-item mx-2 circle box move-up"><a href="https://www.instagram.com/" class="text-decoration-none text-white"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                   </div>	
+                </div>
+            </div>	
+            </div>
+           <!--copyright end-->  
+        </div>
+    </div> 	
+</section>
+<!--footer end-->
+
+</body>
+</html>
+
+
+
+<!--scroll top button-->
+<script>
+	// Get the button:
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+<!--scroll top button end-->

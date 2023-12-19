@@ -1,0 +1,157 @@
+{% include 'header.html' %}
+
+<!--search classes-->
+<section id="class" class="class">
+	<div class="row justify-content-center m-0 mt-5">
+		<div class="col-sm-11">
+			<div class="row">
+				{% for class in classdata %}
+				<div class="col-sm-3 mt-4">
+					<div class="card border-0">
+					  <div class="image position-relative">
+					  	<img src="/media/{{class.classimage}}" class="rounded-top img-fluid h-50 w-100 down2 ">	
+					  	<a href="/contact/" class="text-decoration-none text-white circle2 position-absolute top-0 end-0 "><i class="fa fa-shopping-cart"></i></a>
+					  </div>
+					  <div class="text pt-3 ps-3 pe-3 border rounded-bottom">
+					  	<a href="/classes/" class="text-decoration-none text-dark"><h5>{{class.classtitle |safe}}</h5><a>
+					  	<p>{{class.classtime}}</p>
+					  	<div class="row">
+					  	   <div class="col-sm-6">
+					  		<img src="/media/{{class.classteacherimage}}" class="img-fluid w-25 h-75">
+					  		<a href="#" class="text-decoration-none text-dark">{{class.classteachername}}</a>	
+					  	   </div>
+					  	   <div class="col-sm-6 text-end">
+					  		   <p class="fw-bold fs-5">${{class.classprice}}</p>
+					  	    </div>
+					  	</div>
+					  </div>
+					</div>
+				</div>
+                {% empty %}
+                <p class="text-center fs-2 blue fw-bold">No Class Found</p>
+				{% endfor %}
+
+			    <div class="row mt-3">
+				<div class="col-sm-12">
+					<div class="row justify-content-end">
+						<div class="col-sm-2">
+							<ul class="pagination">
+								{% if classdata.has_previous %}
+                                <li class="page-item">
+                                    <a class="page-link border-0" href="/class/?page={{ classdata.previous_page_number }}" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                {% endif %}
+								{% for n in totalpagelist %}
+								<li class="page-item mx-2"><a class="page-link border-0" href="/class/?page={{n}}">{{n}}</a></li>
+								{% endfor %}
+								{% if classdata.has_next %}
+								<li class="page-item">
+								  <a class="page-link border-0" href="/class/?page={{classdata.next_page_number}}" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+								  </a>
+								</li>
+								{% endif %}
+							  </ul>
+						</div>
+					</div>
+				</div>
+			    </div>
+			</div>	
+		</div>
+	</div>
+</section>
+<!--search classes end-->
+
+<!--footer-->
+<section id="footer" class="footer">
+    <div class="row justify-content-center mx-0 mt-5 pt-2">
+        <div class="col-sm-12 blue2">
+           <!--footer-->
+            <div class="row justify-content-center pt-5 ">
+               <div class="col-sm-11">
+                   <div class="row">
+                      <div class="col-sm-4">
+                      <img src="/static/images/logo.png" class="img-fluid">
+                      <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore. </p>	
+                      </div>
+                      <div class="col-sm-4">
+                          <ul class="list-inline">
+                             <li><h6 class="mb-0"><span><i class="fa fa-phone orange fs-5 me-2"></i></span>Call</h6>
+                                 <p class="ps-4">+2 342 5446 67</p>
+                             </li>
+                             <li><h6 class="mb-0"><span><i class="fa fa-clock-o orange fs-5 me-2"></i></span>Work Time</h6>
+                                 <p class="ps-4">Mon-Fri 8AM-5PM</p>
+                             </li>
+                             <li><h6 class="mb-0"><span><i class="fa fa-map-marker orange fs-5 me-2"></i></span>Address</h6>
+                                 <p class="ps-4">Franklin St, Greenpoint Ave</p>
+                             </li>	
+                          </ul>
+                      </div>
+                      <div class="col-sm-4">
+                          <h5>Quick Link</h5>
+                          <ul class="list-inline">
+                            <li><a href="/about/" class="text-decoration-none text-dark">About Us</a></li>
+                            <li><a href="/class/" class="text-decoration-none text-dark">Our Classes</a></li>
+                            <li><a href="/teacher/" class="text-decoration-none text-dark">School Teachers</a></li>
+                            <li><a href="/events/" class="text-decoration-none text-dark">Recent Events</a></li>
+                            <li><a href="/blog/" class="text-decoration-none text-dark">Our News</a></li>
+                          </ul>
+                      </div>	
+                   </div>
+               </div>	
+            </div>
+           <!--footer end-->
+           <!--copyright-->
+            <div class="row justify-content-center pt-5">
+            <div class="col-sm-11 border-top p-3">
+                <div class="row">
+                   <div class="col-sm-10">
+                       <p>&#169 Copyrights 2020 Shelly All rights reserved</p>
+                   </div>
+                   <div class="col-sm-2">
+                        <ul class="list-inline">
+                            <li class="list-inline-item mx-2 circle box move-up"><a href="https://www.facebook.com/" class="text-decoration-none text-white"><i class="fa fa-facebook"></i></a></li>
+                            <li class="list-inline-item mx-2 circle box move-up"><a href="https://www.linkedin.com/" class="text-decoration-none text-white"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="list-inline-item mx-2 circle box move-up"><a href="https://www.instagram.com/" class="text-decoration-none text-white"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                   </div>	
+                </div>
+            </div>	
+            </div>
+           <!--copyright end-->  
+        </div>
+    </div> 	
+</section>
+<!--footer end-->
+
+</body>
+</html>
+
+
+
+<!--scroll top button-->
+<script>
+	// Get the button:
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+<!--scroll top button end-->

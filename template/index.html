@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shelly</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+	<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="	fa fa-arrow-up pb-3"></i></button>
+
+<!--header-->
+<section id="header" class="header">
+	<div class="row justify-content-center m-0 p-0 mb-5 bga">
+		<div class="col-xl-12 col-lg-10">
+			<div class="row justify-content-center">
+			   <div class="col-sm-11 border-bottom">
+				<div class="row justify-content-center">
+					<div class="col-sm-3 p-3">
+					   <a href="/"><img src="/static/images/logo.png" class="img-fluid"></a>
+					</div>
+					<div class="col-sm-9">
+						<div class="row justify-content-end">
+							<div class="col-sm-3 p-3">
+								<div class="row">
+									<div class="col-sm-2 text-end ">
+										<i class="fa fa-phone fs-4 orange"></i>
+									</div>
+									<div class="col-sm-10">
+										<h6>Call</h6>
+										<p>+2 342 5446 67</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 p-3">
+								<div class="row">
+									<div class="col-sm-2 text-end">
+										<i class="fa fa-clock-o fs-4 orange"></i>
+									</div>
+									<div class="col-sm-10">
+										<h6>Work Time</h6>
+										<p>Mon-Fri 8AM-5PM</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 p-3">
+								<div class="row">
+									<div class="col-sm-2">
+										<i class="fa fa-map-marker fs-4 orange"></i>
+									</div>
+									<div class="col-sm-10">
+										<h6>Address</h6>
+										<p>Franklin St, Greenpoint Ave</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			   </div>
+			</div>
+			<!--nav bar-->
+	         <div class="row justify-content-center">
+	              	<div class="col-sm-11">
+	              		<div class="row justify-content-end">
+	              			<div class="col-sm-10 nav">
+								<nav class="navbar navbar-expand-sm">
+									<div class="container-fluid">
+									  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+										<span class="navbar-toggler-icon"></span>
+									  </button>
+									  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+										<ul class="list-inline mt-3 navbar-nav">
+											<li class="list-inline-item me-4 nav-item">
+												<a href="/" class="text-decoration-none fs-5 nav-link">Home</a>
+											</li>
+											<li class="list-inline-item mx-4 dropdown position-relative nav-item">
+												<a href="/about/" class="text-decoration-none  fs-5 dropbtn nav-link">About</a>
+												<div class="dropdown-content rounded-4 shadow bg-white position-absolute">
+													<a href="/events/" class="text-decoration-none">Events</a>
+													<a href="/eventsingle/"class="text-decoration-none">Event Single</a>
+													<a href="/404/"class="text-decoration-none">404</a>
+												 </div>
+											</li>
+											<li class="list-inline-item mx-4 dropdown2 position-relative nav-item">
+												<a href="/class/" class="text-decoration-none  fs-5 dropbtn2 nav-link">Classes</a>
+												<div class="dropdown-content2 rounded-4 shadow bg-white position-absolute">
+													<a href="/classes/" class="text-decoration-none">Class Single</a>
+												 </div>
+											</li>
+											<li class="list-inline-item mx-4 dropdown3 position-relative nav-item">
+												<a href="/teacher/" class="text-decoration-none  fs-5 dropbtn3 nav-link">Teachers</a>
+												<div class="dropdown-content3 rounded-4 shadow bg-white position-absolute">
+													<a href="/singleteacher/" class="text-decoration-none">Teacher Single</a>
+												 </div>
+											</li>
+											<li class="list-inline-item mx-4 dropdown4 position-relative nav-item">
+												<a href="/blog/" class="text-decoration-none  fs-5 dropbtn4 nav-link">Blog</a>
+												<div class="dropdown-content4 rounded-4 shadow bg-white position-absolute">
+													<a href="/singleblog/" class="text-decoration-none">Blog Single</a>
+												 </div>
+											</li>
+											<li class="list-inline-item ms-4">
+												<a href="/contact/" class="text-decoration-none  fs-5 nav-link">Contacts</a>
+											</li>
+										</ul>
+									  </div>
+									</div>
+								</nav>
+	              			</div>
+	              			<div class="col-sm-2 mt-3">
+	              				<ul class="list-inline">
+	              					<li class="list-inline-item mx-2 ps-3 circle box move-up"><a href="https://www.facebook.com/" class="text-decoration-none text-white"><i class="fa fa-facebook"></i></a></li>
+	              					<li class="list-inline-item mx-2 circle box move-up"><a href="https://www.linkedin.com/" class="text-decoration-none text-white"><i class="fa fa-linkedin"></i></a></li>
+	              					<li class="list-inline-item mx-2 circle box move-up"><a href="https://www.instagram.com/" class="text-decoration-none text-white"><i class="fa fa-instagram"></i></a></li>
+	              				</ul>
+	              			</div>
+	              		</div>
+	              	</div>
+	         </div>
+         <!--nav bar end-->
+	      <!--text-->
+	         <div class="row justify-content-center mt-5 position-relative">
+	           	<div class="col-sm-11">
+	           		<div class="row">
+	           			<div class="col-sm-6 mt-5 pt-5">
+	           				<h1 class="fw-bold mt-5">The Smart Way<br>to Learn <span class="orange down pb-1">Anything</span></h1>
+	           				<p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	           				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	           				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	           				consequat.</p>
+							<form autocomplete="off" class="position-relative w-75 mt-5" method="GET">
+								<div class="autocomplete">
+								  <input id="myInput" type="text" name="classname" placeholder="Search Class" class="py-2 border form-control form display-block ps-4 rounded-pill">
+								</div>
+								<button type="submit" class="button bg-transparent  border-0 top-0 end-0 pe-4 position-absolute rounded-pill ms-1 h-100"><i class="fa fa-search fs-6"></i></button>
+							</form>
+	           			</div>
+	           			<div class="col-sm-6 mt-4 ps-5">
+	           				<img src="/static/images/banner.png">
+	           			</div>
+	           		</div>
+	           	</div>
+	         </div>
+	         <h2 class="position-absolute orange fw-bold shell ">Shelly</h2>
+	      <!--text-->
+	     </div>
+	    </div>
+    </div>
+</section>
+<!--header end-->	
+
+<!--intro-->
+<section id="intro" class="intro">
+	<div class="row justify-content-center m-0 mt-5">
+		<div class="col-sm-11">
+			<div class="row justify-content-center">
+			<div class="col-sm-6 text-center mt-5 pt-5 ">	
+			<h1 class="fw-bold">Welcome to <span class="orange">Shelly</span></h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+			</div>
+			</div>
+			<div class="row mt-5">
+				<div class="col-sm-3 ">
+					<div class="card p-3 bg-white shadow border-0"> 
+					   <h6>Awesome Teachers</h6>
+					   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					   tempor incididunt ut labore et dolore magna aliqua.</p>	
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="card p-3 bg-white shadow border-0">
+					   <h6>Global Certificate</h6>
+					   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					   tempor incididunt ut labore et dolore magna aliqua.</p>	
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="card p-3 bg-white shadow border-0">
+					   <h6>Best Programm</h6>
+					   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					   tempor incididunt ut labore et dolore magna aliqua.</p>	
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="card p-3 bg-white shadow border-0">
+					   <h6>Student Support Service</h6>
+					   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					   tempor incididunt ut labore et dolore magna aliqua.</p>	
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center mt-5 pt-5"> 
+			<div class="col-sm-11">
+				<div class="row2">
+					  <div class="column2">
+						<img src="/static/images/1.jpg"class="rounded-4">
+						<img src="/static/images/10.jpg"class="rounded-4">
+					  </div>
+					  <div class="column2">
+						<img src="/static/images/2.jpg"class="rounded-4">
+						<img src="/static/images/3.jpg"class="rounded-4">
+					  </div>
+					  <div class="column2">
+						<img src="/static/images/4.jpg"class="rounded-4">
+						<img src="/static/images/5.jpg"class="rounded-4">
+					  </div>
+					  <div class="column2">
+						<img src="/static/images/6.jpg"class="rounded-4">
+						<img src="/static/images/7.jpg"class="rounded-4">
+					  </div>
+					  <div class="column2">
+						<img src="/static/images/8.jpg"class="rounded-4">
+						<img src="/static/images/9.jpg"class="rounded-4">
+					  </div>
+					</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--intro end-->
+
+<!--class-->
+<section id="class" class="class">
+	<div class="row justify-content-center m-0 mt-5">
+		<div class="col-sm-11">
+		  <div class="row">
+		  	<div class="col-sm-6">
+		  	<h2 class="fw-bold">Our Classes</h2>	
+		  	<p>Nam mattis felis id sodales rutrum. Nulla ornare tristique mauris, a laoreet erat ornare sit amet. Nulla sagittis faucibus lacus</p>
+		  	</div>
+		  	<div class="col-sm-6">
+		  		<div class="float-end pe-md-4 pt-5">
+					<a class="indicator text-secondary text-decoration-none" href="#featureCarousel" role="button" data-bs-slide="prev">
+						<span class="fa fa-long-arrow-left fs-3" aria-hidden="true"></span>
+					</a> &nbsp;&nbsp;
+					<a class="w-aut indicator  text-secondary text-decoration-none" href="#featureCarousel" role="button" data-bs-slide="next">
+						<span class="fa fa-long-arrow-right fs-3" aria-hidden="true"></span>
+					</a>
+				</div>
+		  	</div>
+		  </div>
+		  <div class="row mt-5">
+		<div class="container" id="featureContainer">
+		<div class="row mx-auto my-auto justify-content-center">
+			<div id="featureCarousel" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active">
+						<div class="col-md-3 p-1">
+							<div class="card">
+							  <div class="image position-relative">
+							  	<img src="/static/images/img1.jpg" class="rounded-top img-fluid h-50 w-100 down2 ">	
+							  	<a href="/contact/" class="text-decoration-none text-white circle2 position-absolute top-0 end-0 "><i class="fa fa-shopping-cart"></i></a>
+							  </div>
+							  <div class="text pt-3 ps-3 pe-3 border rounded-bottom">
+							  	<h5>Basic English Speaking <br>and Gramer</h5>
+							  	<p>Mon-Fri 10AM-12AM</p>
+							  	<div class="row">
+							  	   <div class="col-sm-6">
+							  		<img src="/static/images/ico.png" class="img-fluid w-25 h-75">
+							  		<a href="#" class="text-decoration-none text-dark">Hubrat Frank</a>	
+							  	   </div>
+							  	   <div class="col-sm-6 text-end">
+							  		   <p class="fw-bold fs-5">$45</p>
+							  	    </div>
+							  	</div>
+							  </div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="col-md-3 p-1">
+							<div class="card">
+							  <div class="image position-relative">
+							  	<img src="/static/images/img2.jpg" class="rounded-top img-fluid h-50 w-100 down2 ">	
+							  	<a href="/contact/" class="text-decoration-none text-white circle2 position-absolute top-0 end-0 "><i class="fa fa-shopping-cart"></i></a>
+							  </div>
+							  <div class="text pt-3 ps-3 pe-3 border rounded-bottom">
+							  	<h5>Basic English Speaking <br>and Gramer</h5>
+							  	<p>Mon-Fri 10AM-12AM</p>
+							  	<div class="row">
+							  	   <div class="col-sm-6">
+							  		<img src="/static/images/ico.png" class="img-fluid w-25 h-75">
+							  		<a href="#" class="text-decoration-none text-dark">Hubrat Frank</a>	
+							  	   </div>
+							  	   <div class="col-sm-6 text-end">
+							  		   <p class="fw-bold fs-5">$67</p>
+							  	    </div>
+							  	</div>
+							  </div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="col-md-3 p-1">
+							<div class="card">
+							  <div class="image position-relative">
+							  	<img src="/static/images/img3.jpg" class="rounded-top img-fluid h-50 w-100 down2">	
+							  	<a href="/contact/" class="text-decoration-none text-white circle2 position-absolute top-0 end-0 "><i class="fa fa-shopping-cart"></i></a>
+							  </div>
+							  <div class="text pt-3 ps-3 pe-3 border rounded-bottom">
+							  	<h5>Basic English Speaking <br>and Gramer</h5>
+							  	<p>Mon-Fri 10AM-12AM</p>
+							  	<div class="row">
+							  	   <div class="col-sm-6">
+							  		<img src="/static/images/ico.png" class="img-fluid w-25 h-75">
+							  		<a href="#" class="text-decoration-none text-dark">Hubrat Frank</a>	
+							  	   </div>
+							  	   <div class="col-sm-6 text-end">
+							  		   <p class="fw-bold fs-5">$89</p>
+							  	    </div>
+							  	</div>
+							  </div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="col-md-3 p-1">
+							<div class="card">
+							  <div class="image position-relative">
+							  	<img src="/static/images/img4.jpg" class="rounded-top img-fluid h-50 w-100 down2 ">	
+							  	<a href="/contact/" class="text-decoration-none text-white circle2 position-absolute top-0 end-0 "><i class="fa fa-shopping-cart"></i></a>
+							  </div>
+							  <div class="text pt-3 ps-3 pe-3 border rounded-bottom">
+							  	<h5>Basic English Speaking <br>and Gramer</h5>
+							  	<p>Mon-Fri 10AM-12AM</p>
+							  	<div class="row">
+							  	   <div class="col-sm-6">
+							  		<img src="/static/images/ico.png" class="img-fluid w-25 h-75">
+							  		<a href="#" class="text-decoration-none text-dark">Hubrat Frank</a>	
+							  	   </div>
+							  	   <div class="col-sm-6 text-end">
+							  		   <p class="fw-bold fs-5">$67</p>
+							  	    </div>
+							  	</div>
+							  </div>
+							</div>
+						</div>
+					</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	    </div>
+
+	    <div class="row justify-content-center mt-5">
+	   	<div class="col-sm-4 text-center">
+	   	    <a href="/class/"class="text-decoration-none py-2 pe-3 ps-2 bluz rounded-pill border"><span class="me-5 circle3"><i class="fa fa-long-arrow-right blue"></i></span><span class="text-white pe-4">Classes</span></a>
+	   	</div>
+	   </div>
+		</div>
+	</div>
+
+	    	
+	</div>
+</section>
+<!--class end-->
+
+
+<!--teacher-->
+<section id="teacher" class="teacher">
+<div class="row justify-content-center m-0 mt-5 pt-5">
+   <div class="col-sm-11">
+   	<div class="row justify-content-center">
+   	   <div class="col-sm-6 text-center">
+   	   	<h1 class="fw-bold">Our Awesome<br>Teacher</h1>
+   	   	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   	   	tempor incididunt ut labore et dolore magna aliqua.</p>
+   	   </div>	
+   	</div>
+   	<div class="row justify-content-center mt-5">
+		{% for teach in teacherdata %}	
+		<div class="col-sm-3 position-relative mt-5">
+			<img src="/media/{{teach.teacher_image}}" class="img-fluid rounded-5">
+			<div class="dropup position-absolute top-0 end-0 me-5">
+		   <button class="dropbtn7 rounded-circle text-white border-0"><i class="fa fa-plus"></i></button>
+		   <div class="dropup-content position-absolute ">
+			   <a href="{{teach.teacher_facebook}}" class="text-decoration-none text-white px-3 py-1 pt-3"><i class="fa fa-facebook"></i></a>
+			   <a href="{{teach.teacher_linkedin}}" class="text-decoration-none text-white px-3 py-1"><i class="fa fa-linkedin"></i></a>
+			   <a href="{{teach.teacher_instagram}}" class="text-decoration-none text-white px-3 py-1"><i class="fa fa-instagram"></i></a>
+			   <a href="#" class="text-decoration-none text-white px-3 py-2"><i class="fa fa-plus"></i></a>
+		   </div>
+	   </div>
+			<h5 class="mt-3">{{teach.teacher_name}}</h5>
+			<p class="blue">{{teach.teacher_designation}}</p>
+		</div>
+        {% endfor %}	
+   	</div>
+
+   </div>	
+</div>	
+</section>	
+<!--teacher end-->
+
+<!--Events-->
+<section id="Events" class="Events">
+	<div class="row justify-content-center m-0 mt-5 pt-5">
+		<div class="col-sm-11">
+		   <div class="row">
+		   	<div class="col-sm-6 pe-5">
+		         <h1 class="fw-bold">Find Your Course</h1>
+		         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		         tempor incididunt ut labore et dolore magna aliqua.</p>
+		         <h4 class="blue"><i class="fa fa-phone orange me-3 fs-3"></i> Call: <span class="fw-bold">+2 342 5446 67</span></h4>
+		         <img src="/static/images/course.png" class="img-fluid mt-3">
+		   	</div>
+		   	<div class="col-sm-6">
+		   	   <div class=" p-4 rounded-5 bg-white shadow-sm bside mt-5">
+		   		<div class="row">
+		   			<div class="col-sm-6">
+		   			  <p><span><i class="fa fa-calendar-check-o me-3 orange"></i></span>29/07/202011AM to 15PM</p>	
+		   			</div>
+		   			<div class="col-sm-6 text-end">
+		   			  <h5 class="blue">Free</h5>
+		   			</div>
+		   			<div class="col-sm-12">
+		   			   <h4>Digital Transformation Conference</h4>	
+		   			</div>
+		   			<div class="col-sm-6">
+		   				<img src="/static/images/ico2.png">
+		   				<a href="#" class="text-decoration-none text-dark">Amanda Kern</a>
+		   			</div>
+		   			<div class="col-sm-6 text-end">
+		   			   <p><span><i class="fa fa-map-marker me-3 orange"></i></span>43 castle road 517 district</p>		
+		   			</div>
+		   		</div>	
+		   	   </div>
+		   	   <div class="p-4 rounded-5 bg-white shadow-sm my-5 side bside ">
+		   		<div class="row">
+		   			<div class="col-sm-6">
+		   			  <p><span><i class="fa fa-calendar-check-o me-3 orange"></i></span>29/07/202011AM to 15PM</p>	
+		   			</div>
+		   			<div class="col-sm-6 text-end">
+		   			  <h5 class="blue">$16</h5>
+		   			</div>
+		   			<div class="col-sm-12">
+		   			   <h4>Environment Conference</h4>	
+		   			</div>
+		   			<div class="col-sm-6">
+		   				<img src="/static/images/ico2.png">
+		   				<a href="#" class="text-decoration-none text-dark">Cvita Doleschall</a>
+		   			</div>
+		   			<div class="col-sm-6 text-end">
+		   			   <p><span><i class="fa fa-map-marker me-3 orange"></i></span>43 castle road 517 district</p>		
+		   			</div>
+		   		</div>
+		   	   </div>
+		   	   <div class=" p-4 rounded-5 bg-white shadow-sm bside">
+		   		<div class="row">
+		   			<div class="col-sm-6">
+		   			  <p><span><i class="fa fa-calendar-check-o me-3 orange"></i></span>29/07/202011AM to 15PM</p>	
+		   			</div>
+		   			<div class="col-sm-6 text-end">
+		   			  <h5 class="blue">$8</h5>
+		   			</div>
+		   			<div class="col-sm-12">
+		   			   <h4>Campus Clean Workshop</h4>	
+		   			</div>
+		   			<div class="col-sm-6">
+		   				<img src="/static/images/ico2.png">
+		   				<a href="#" class="text-decoration-none text-dark">Helena Brauer</a>
+		   			</div>
+		   			<div class="col-sm-6 text-end">
+		   			   <p><span><i class="fa fa-map-marker me-3 orange"></i></span>43 castle road 517 district</p>		
+		   			</div>
+		   		</div>	
+		   	   </div>
+		   	   <div class="text-end mt-5">
+		   	   <a href="/events/" class="text-decoration-none blue">All Event<span class="ms-2"><i class="fa fa-long-arrow-right"></i></span></a>
+		   	   </div>
+		   	</div>
+		   </div>	
+		</div>
+	</div>
+</section>
+<!--Events end-->
+
+<!--news-->
+<section id="news" class="news">
+   <div class="row justify-content-center m-0 mt-5">
+   	<div class="col-sm-11">
+   	  <div class="row justify-content-center">
+   	  	<div class="col-sm-6 text-center">
+   	  	  <h1 class="fw-bold">Recent News</h1>
+   	  	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   	  	  tempor incididunt ut labore et dolore magna aliqua.</p>	
+   	  	</div>
+   	  </div>
+   	  <div class="row">
+   	  	<div class="col-sm-4 position-relative">
+   	  	    <img src="/static/images/blog1.jpg" class="img-fluid rounded-5">
+   	  	    <p class="bg-warning w-25 text-center rounded-pill position-absolute top-0 start-0 high py-1">English</p>
+   	  	    <ul class="list-inline mt-4 ps-3 mb-0">
+				<li class="list-inline-item"><a href="#" class="text-decoration-none text-dark">17/09/2020</a></li>
+				<li class="list-inline-item"><a href="#" class="text-decoration-none text-dark">by Admin</a></li>
+				<li class="list-inline-item"><a href="#" class="text-decoration-none text-dark"><i class="fa fa-tags me-2 orange"></i>Teachers,School</a></li>
+			</ul>
+   	  	    <h4 class="px-3">Campus Clean Workshop</h4>
+   	  	    <p class="px-3 md-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   	  	    tempor incididunt ut labore et dolore. </p>
+   	  	    <a href="/singleblog/" class="text-decoration-none blue px-3">Read<i class="fa fa-long-arrow-right ms-2"></i></a>	
+   	  	</div>
+   	  	<div class="col-sm-4 position-relative">
+   	  	    <img src="/static/images/blog2.jpg" class="img-fluid rounded-5">
+   	  	    <p class="bg-warning w-25 text-center rounded-pill position-absolute top-0 start-0 high py-1">English</p>
+   	  	    <ul class="list-inline mt-4 ps-3 mb-0">
+				<li class="list-inline-item"><a href="#" class="text-decoration-none text-dark">17/09/2020</a></li>
+				<li class="list-inline-item"><a href="#" class="text-decoration-none text-dark">by Admin</a></li>
+				<li class="list-inline-item"><a href="#" class="text-decoration-none text-dark"><i class="fa fa-tags me-2 orange"></i>Teachers,School</a></li>
+			</ul>
+   	  	    <h4 class="px-3">Campus Clean Workshop</h4>
+   	  	    <p class="px-3 md-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   	  	    tempor incididunt ut labore et dolore. </p>
+   	  	    <a href="/singleblog/" class="text-decoration-none blue px-3">Read<i class="fa fa-long-arrow-right ms-2"></i></a>	
+   	  	</div>
+   	  	<div class="col-sm-4 position-relative">
+   	  	    <img src="/static/images/blog3.jpg" class="img-fluid rounded-5">
+   	  	    <p class="bg-warning w-25 text-center rounded-pill position-absolute top-0 start-0 high py-1">English</p>
+   	  	    <ul class="list-inline mt-4 ps-3 mb-0">
+				<li class="list-inline-item"><a href="#" class="text-decoration-none text-dark">17/09/2020</a></li>
+				<li class="list-inline-item"><a href="#" class="text-decoration-none text-dark">by Admin</a></li>
+				<li class="list-inline-item"><a href="#" class="text-decoration-none text-dark"><i class="fa fa-tags me-2 orange"></i>Teachers,School</a></li>
+			</ul>
+   	  	    <h4 class="px-3">Campus Clean Workshop</h4>
+   	  	    <p class="px-3 md-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   	  	    tempor incididunt ut labore et dolore. </p>
+   	  	    <a href="/singleblog/" class="text-decoration-none blue px-3">Read<i class="fa fa-long-arrow-right ms-2"></i></a>	
+   	  	</div>
+   	  </div>	
+   	</div>
+   </div>	
+</section>
+<!--news end-->
+
+ {% include "footer.html" %}
+
+<!--class silder-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script>
+	let items = document.querySelectorAll('#featureContainer .carousel .carousel-item');
+    items.forEach((el) => {
+      const minPerSlide = 4
+      let next = el.nextElementSibling
+      for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+          // wrap carousel by using first child
+          next = items[0]
+        }
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+      }
+    })
+    $(document).ready(function(){
+      $('#featureCarousel').carousel({interval: 0});
+      $('#featureCarousel').carousel('pause');
+    });
+</script>
+
+<!--class slider end-->
+
+<!-- autocomplete -->
+<script>
+	function autocomplete(inp, arr) {
+	  /*the autocomplete function takes two arguments,
+	  the text field element and an array of possible autocompleted values:*/
+	  var currentFocus;
+	  /*execute a function when someone writes in the text field:*/
+	  inp.addEventListener("input", function(e) {
+		  var a, b, i, val = this.value;
+		  /*close any already open lists of autocompleted values*/
+		  closeAllLists();
+		  if (!val) { return false;}
+		  currentFocus = -1;
+		  /*create a DIV element that will contain the items (values):*/
+		  a = document.createElement("DIV");
+		  a.setAttribute("id", this.id + "autocomplete-list");
+		  a.setAttribute("class", "autocomplete-items");
+		  /*append the DIV element as a child of the autocomplete container:*/
+		  this.parentNode.appendChild(a);
+		  /*for each item in the array...*/
+		  for (i = 0; i < arr.length; i++) {
+			/*check if the item starts with the same letters as the text field value:*/
+			if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+			  /*create a DIV element for each matching element:*/
+			  b = document.createElement("DIV");
+			  /*make the matching letters bold:*/
+			  b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+			  b.innerHTML += arr[i].substr(val.length);
+			  /*insert a input field that will hold the current array item's value:*/
+			  b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+			  /*execute a function when someone clicks on the item value (DIV element):*/
+			  b.addEventListener("click", function(e) {
+				  /*insert the value for the autocomplete text field:*/
+				  inp.value = this.getElementsByTagName("input")[0].value;
+				  /*close the list of autocompleted values,
+				  (or any other open lists of autocompleted values:*/
+				  closeAllLists();
+			  });
+			  a.appendChild(b);
+			}
+		  }
+	  });
+	  /*execute a function presses a key on the keyboard:*/
+	  inp.addEventListener("keydown", function(e) {
+		  var x = document.getElementById(this.id + "autocomplete-list");
+		  if (x) x = x.getElementsByTagName("div");
+		  if (e.keyCode == 40) {
+			/*If the arrow DOWN key is pressed,
+			increase the currentFocus variable:*/
+			currentFocus++;
+			/*and and make the current item more visible:*/
+			addActive(x);
+		  } else if (e.keyCode == 38) { //up
+			/*If the arrow UP key is pressed,
+			decrease the currentFocus variable:*/
+			currentFocus--;
+			/*and and make the current item more visible:*/
+			addActive(x);
+		  } else if (e.keyCode == 13) {
+			/*If the ENTER key is pressed, prevent the form from being submitted,*/
+			e.preventDefault();
+			if (currentFocus > -1) {
+			  /*and simulate a click on the "active" item:*/
+			  if (x) x[currentFocus].click();
+			}
+		  }
+	  });
+	  function addActive(x) {
+		/*a function to classify an item as "active":*/
+		if (!x) return false;
+		/*start by removing the "active" class on all items:*/
+		removeActive(x);
+		if (currentFocus >= x.length) currentFocus = 0;
+		if (currentFocus < 0) currentFocus = (x.length - 1);
+		/*add class "autocomplete-active":*/
+		x[currentFocus].classList.add("autocomplete-active");
+	  }
+	  function removeActive(x) {
+		/*a function to remove the "active" class from all autocomplete items:*/
+		for (var i = 0; i < x.length; i++) {
+		  x[i].classList.remove("autocomplete-active");
+		}
+	  }
+	  function closeAllLists(elmnt) {
+		/*close all autocomplete lists in the document,
+		except the one passed as an argument:*/
+		var x = document.getElementsByClassName("autocomplete-items");
+		for (var i = 0; i < x.length; i++) {
+		  if (elmnt != x[i] && elmnt != inp) {
+			x[i].parentNode.removeChild(x[i]);
+		  }
+		}
+	  }
+	  /*execute a function when someone clicks in the document:*/
+	  document.addEventListener("click", function (e) {
+		  closeAllLists(e.target);
+	  });
+	}
+	
+	/*An array containing all the country names in the world:*/
+	var countries = ["Environmental Studies","Earth Sciences","Basic English Speaking","Gramer","Natural Sciences","Mathematics Courses","Hospitality, Leisure","Sports Courses"];
+	
+	/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+	autocomplete(document.getElementById("myInput"), countries);
+</script>
+<!-- autocomplete end-->

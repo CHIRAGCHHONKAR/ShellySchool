@@ -1,0 +1,569 @@
+*{font-family: popins,sans-serif;}
+
+.orange{color:#ff8f09}
+
+.orange2{background:linear-gradient(47deg,#fdc830,#f37335);}
+
+.orange3{background: #ffcb8c!important;}
+
+.blue{color: #0745a1}
+
+.bluz{background:#0745a1 }
+
+.bluz:hover{background:#ff8f09;
+            transition:0.5s }
+.bluz i:hover{color:#ff8f09;
+              transition:0.5s }            
+
+.blue2{background: #f2f7fd}
+
+.highz{margin-top: 250px !important}
+
+.highz2{margin-top: 502px !important;
+        margin-left:25px !important;}
+
+.high2{margin-top: -160px !important}
+
+.high3{margin-top: 900px;}
+
+.down{border-bottom: 3px solid #ff8f09;}
+
+.down2{border-bottom: 4px solid #0a35a9;
+      margin-top: -2px}  
+
+.back{z-index: 99} 
+
+.back2{z-index: 100 !important;}
+
+.bgig{background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(images/blogger.jpg);
+      background-size: cover;
+      height: 700px;}
+.bgigtop{margin-top: 200px;}      
+
+.hig{height: 270px;}    
+
+.side{margin-left: -100px;
+      margin-right: 100px;}
+
+.up{padding: 70px 0px 70px 0px}
+
+.play{margin-left: 50%;
+    margin-top: 30%;}
+
+.bord{border: 1px solid #ff8f09;}
+
+.tab{    padding-top: 0 !important;
+    padding-bottom: 2px !important;
+    padding-left: 31px !important;}
+
+.bside{ border-left: 4px solid #ff8f09;} 
+
+.bga{background-image:url(../images/banner2.png);
+     background-repeat: no-repeat;
+     background-position: 100% ;} 
+
+.bga2{background-image:url(../images/class-bg.jpg);
+     background-size: cover;}
+
+.bga3{background: #f2f7fd url(images/error-bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;}       
+
+.high{margin-top: 277px;
+      margin-left: 50px;} 
+
+/*background circle*/                    
+.circle{background: #14378d;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        padding: 8px 0px 0px 13px;}
+
+.circle2{background:linear-gradient(180deg,#fdc830,#f37335);
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        padding: 8px 0px 0px 13px;
+        margin-top: 195px;
+        margin-right: 25px;}
+
+.circle3{background: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        padding: 2px 5px 2px 5px;} 
+
+.circle4{background: linear-gradient(180deg,#fdc830,#f37335);
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        padding: 8px 0px 0px 14px;
+        margin-top: 463px;
+        margin-right: 50px;}
+
+.circle5{background: linear-gradient(180deg,#fdc830,#f37335) !important;
+        width: 40px !important;
+        height: 40px;
+        border-radius: 50px;
+        padding: 8px 0px 0px 14px;
+        margin-top: 240px;}
+
+.circle6{background: linear-gradient(180deg,#fdc830,#f37335);
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        padding: 6px 0px 0px 17px;} 
+
+.circle7{background: linear-gradient(180deg,#fdc830,#f37335);
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        color: #f1f1f1;}
+.circle8{background: linear-gradient(180deg,#fdc830,#f37335);
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        padding:15px 0px 0px 0px}
+.circle8:hover{background:linear-gradient(45deg,#fdc830,#f37335); ;}                          
+/*background circle end*/ 
+
+
+/* classes slider */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+@media (max-width: 767px) {
+#featureContainer .carousel-inner .carousel-item > div {
+  display: none;
+}
+#featureContainer .carousel-inner .carousel-item > div:first-child {
+  display: block;
+}
+}
+
+#featureContainer .carousel-inner .carousel-item.active,
+#featureContainer .carousel-inner .carousel-item-next,
+#featureContainer .carousel-inner .carousel-item-prev {
+display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+#featureContainer .carousel-inner .carousel-item-end.active,
+#featureContainer .carousel-inner .carousel-item-next {
+  transform: translateX(30%);
+}
+
+#featureContainer .carousel-inner .carousel-item-start.active, 
+#featureContainer .carousel-inner .carousel-item-prev {
+  transform: translateX(-30%);
+}
+#featureContainer .card img{
+  width: 90%;
+  height: 40vh;
+}
+#featureContainer .carousel-item{
+  justify-content: space-between;
+}
+}
+@media (max-width: 767px) {
+#featureContainer .card img{
+  width: 100%;
+  height: 75vh;
+}
+}
+#featureContainer .carousel-inner .carousel-item-end,
+#featureContainer .carousel-inner .carousel-item-start { 
+transform: translateX(0);
+}
+#featureContainer .card{
+border: 0;
+}
+#featureContainer .card .card-img-overlays{
+position: absolute;
+bottom: 15%;
+left: 10%;
+color: #fff;
+font-weight: bolder; ;
+}
+
+/* classes slider end */
+
+
+/*underline nav bar*/
+.nav ul li a{color: #000000;
+           display: inline-block;
+           position: relative;}
+.nav ul li a:hover{color:#0745a1 }           
+.nav ul li a:after{content: '';
+                position: absolute;
+                width: 30%;
+                transform: scaleX(0);
+                height: 5px;
+                border-radius: 50px;
+                bottom: 0;
+                left: 0;
+                background:#0745a1;
+                transform-origin: left;
+                transition:transform 0.25s ease-out;}
+.nav ul li a:hover:after{transform: scaleX(1);
+                         transform-origin:left;}
+
+/*underline nav bar end*/
+
+.nav2 a {color: #000000;
+           display: inline-block;
+           position: relative;}
+.nav2 a:hover{color:#0745a1 }
+
+.nav2 a:after{content: '';
+                position: absolute;
+                width: 30%;
+                transform: scaleX(0);
+                height: 5px;
+                border-radius: 50px;
+                bottom: 0;
+                left: 0;
+                background:#0745a1;
+                transform-origin: left;
+                transition:transform 0.25s ease-out;}
+
+.nav2 a:hover:after{transform: scaleX(1);
+                    transform-origin:left;} 
+
+/*background text*/
+.shell{font-size: 182px;
+    bottom: 20%;
+    left: -30px;
+    opacity: .1;
+    z-index: -1;}
+/*background text end*/  
+
+/*background text2*/
+.shell2{color: #f37335;
+    font-size: 162.6px;
+    font-weight: 600;
+    opacity: .1;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%,-50%);}
+/*background text2 end*/
+
+
+/*icon hover*/    
+.box{transition: all 0.3s; }
+.move-up:hover{
+    transition: all .3s ;
+    transform :scale(1.1);
+    box-shadow: 20px;
+}
+/*icon hover end*/
+
+/*icon hover*/    
+.box2{transition: all 0.3s; }
+.move-up2:hover{
+    transition: all .3s ;
+    transform :scale(1.3);
+    box-shadow: 20px;
+}
+/*icon hover end*/
+
+
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column2 {
+  flex: 20%;
+  max-width: 20%;
+  padding: 0 4px;
+}
+
+.column2 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column2 {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column2 {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Pagination links */
+.pagination a {
+  color: #9d9797;
+  padding: 8px 8px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  color: #000;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {color: #000;}
+/* Pagination links end */
+
+
+
+
+/* About dropdown */
+.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 150px;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+.dropdown-content a:after{display: none}
+.dropdown-content a:hover {color: #0745a1;}
+.dropdown:hover .dropdown-content {display: block;}
+/* About dropdown end */
+
+
+
+/* Class dropdown */
+.dropdown2{
+  display: inline-block;
+}
+.dropdown-content2 {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 150px;
+  z-index: 1;
+}
+.dropdown-content2 a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+.dropdown-content2 a:after{display: none}
+.dropdown-content2 a:hover {color: #0745a1;}
+.dropdown2:hover .dropdown-content2 {display: block;}
+/* Class dropdown end */
+
+
+/* teacher dropdown */
+.dropdown3{
+  display: inline-block;
+}
+.dropdown-content3 {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 150px;
+  z-index: 1;
+}
+.dropdown-content3 a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+.dropdown-content3 a:after{display: none}
+.dropdown-content3 a:hover {color: #0745a1;}
+.dropdown3:hover .dropdown-content3 {display: block;}
+/* teacher dropdown end */
+
+
+/* blog dropdown */
+.dropdown4{
+  display: inline-block;
+}
+.dropdown-content4 {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 150px;
+  z-index: 1;
+}
+.dropdown-content4 a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+.dropdown-content4 a:after{display: none}
+.dropdown-content4 a:hover {color: #0745a1;}
+.dropdown4:hover .dropdown-content4 {display: block;}
+/* blog dropdown end */
+
+
+
+/* scroll top button */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 50px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #ff8f09; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+/* scroll top button end */
+
+
+/* schedule */
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.show {
+  display: block;
+}
+
+.btn.active {
+  color: #ff8f09 !important;
+}
+/* schedule end */
+
+/* 404page */
+.op{font-size: 150px;}
+.pp{font-size: 64px;}
+.hp{margin-top: 100px;}
+.circle9{background: linear-gradient(270deg,#159957,#155799);
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  padding:15px 0px 0px 0px}
+.circle9:hover{background:linear-gradient(180deg,#fdc830,#f37335); ;}
+/* 404page end */
+
+/* pagination */
+.page-link:hover{
+  background-color:white !important;
+}
+/* pagination end */
+
+
+
+/* filter search home page */
+.autocomplete {
+  position: relative;
+}
+
+
+
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 10px;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+/* filter search home page end */
+
+
+
+/* droup-up hover button */
+.dropbtn7 {
+    background: linear-gradient(180deg,#fdc830,#f37335);
+    width: 40px;
+    height: 40px;
+    margin-top: 463px;}
+
+
+.dropup {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.dropup-content {
+  background: linear-gradient(180deg,#fdc830,#f37335);
+  display: none;
+  bottom: 0px;
+  border-radius: 90px;
+}
+
+.dropup-content a {
+  display: block;
+
+}
+.dropup:hover .dropup-content {
+  display: block;
+}
+/* droup-up hover button  end*/

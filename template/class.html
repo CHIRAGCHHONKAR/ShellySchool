@@ -1,0 +1,105 @@
+{% include 'header.html' %}
+
+
+
+<!--heading-->
+<section id="about" class="about">
+	<div class="row justify-content-center m-0 mt-5">
+		<div class="col-sm-12 text-center blue2 up">
+		  <div class="back  position-relative">
+			<h1>Classes</h1>
+			<ul class="list-inline">
+				<li class="list-inline-item border-end"><a href="/" class="text-decoration-none text-dark pe-3 back">Home</a></li>
+				<li class="list-inline-item">Classes</li>
+			</ul>
+           </div>	  
+		</div>
+	</div>
+	<h2 class="fw-bold position-absolute orange shell2 ">Shelly</h2>
+</section>
+<!--heading end-->
+
+<!--banner-->
+<section id="banner" class="banner">
+	<div class="row justify-content-center mt-5 pt-5 m-0">
+		<div class="col-sm-11 p-5 bga2">
+			<div class="row">
+				<div class="col-sm-6 ps-5 py-5">
+					<p class="orange mb-0 pt-5">TRY NOW</p>
+			        <h1 class="mb-5">Start Investing You</h1>
+			        <a href="/classes/"class="text-decoration-none py-2 pe-3 ps-2 bluz rounded-pill border-0"><span class="me-5 circle3"><i class="fa fa-long-arrow-right blue"></i></span><span class="text-white pe-4">Classes</span></a>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<!--banner end-->
+
+<!--classes-->
+<section id="class" class="class">
+	<div class="row justify-content-center m-0 mt-5">
+		<div class="col-sm-11">
+			<div class="row">
+				{% for class in classdata %}
+				<div class="col-sm-3 mt-4">
+					<div class="card border-0">
+					  <div class="image position-relative">
+					  	<img src="/media/{{class.classimage}}" class="rounded-top img-fluid h-50 w-100 down2 ">	
+					  	<a href="/contact/" class="text-decoration-none text-white circle2 position-absolute top-0 end-0 "><i class="fa fa-shopping-cart"></i></a>
+					  </div>
+					  <div class="text pt-3 ps-3 pe-3 border rounded-bottom">
+					  	<a href="/classes/" class="text-decoration-none text-dark"><h5>{{class.classtitle |safe}}</h5><a>
+					  	<p>{{class.classtime}}</p>
+					  	<div class="row">
+					  	   <div class="col-sm-6">
+					  		<img src="/media/{{class.classteacherimage}}" class="img-fluid w-25 h-75">
+					  		<a href="#" class="text-decoration-none text-dark">{{class.classteachername}}</a>	
+					  	   </div>
+					  	   <div class="col-sm-6 text-end">
+					  		   <p class="fw-bold fs-5">${{class.classprice}}</p>
+					  	    </div>
+					  	</div>
+					  </div>
+					</div>
+				</div>
+				{% endfor %}
+
+			    <div class="row mt-3">
+				<div class="col-sm-12">
+					<div class="row justify-content-end">
+						<div class="col-sm-2">
+							<ul class="pagination">
+								{% if classdata.has_previous %}
+                                <li class="page-item">
+                                    <a class="page-link border-0" href="/class/?page={{ classdata.previous_page_number }}" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                {% endif %}
+								{% for n in totalpagelist %}
+								<li class="page-item mx-2"><a class="page-link border-0" href="/class/?page={{n}}">{{n}}</a></li>
+								{% endfor %}
+								{% if classdata.has_next %}
+								<li class="page-item">
+								  <a class="page-link border-0" href="/class/?page={{classdata.next_page_number}}" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+								  </a>
+								</li>
+								{% endif %}
+							  </ul>
+						</div>
+					</div>
+				</div>
+			    </div>
+			</div>	
+		</div>
+	</div>
+</section>
+<!--classes end-->
+
+
+
+
+{% include 'footer.html' %}
+

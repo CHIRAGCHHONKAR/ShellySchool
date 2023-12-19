@@ -1,0 +1,94 @@
+{% include 'header.html' %}
+
+
+<!--heading-->
+<section id="about" class="about">
+	<div class="row justify-content-center m-0 mt-5">
+		<div class="col-sm-12 text-center blue2 up">
+		  <div class="back  position-relative">
+			<h1>Contacts</h1>
+			<ul class="list-inline">
+				<li class="list-inline-item border-end"><a href="/" class="text-decoration-none text-dark pe-3 back">Home</a></li>
+				<li class="list-inline-item">Contacts</li>
+			</ul>
+           </div>	  
+		</div>
+	</div>
+	<h2 class="fw-bold position-absolute orange shell2 ">Shelly</h2>
+</section>
+<!--heading end-->
+
+<!--contact-->
+<section id="contact" class="contact">
+	<div class="row justify-content-center mt-5 m-0">
+		<div class="col-sm-11">
+			<div class="row justify-content-center">
+				<div class="col-sm-12">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d877.7098199697903!2d77.32300702920837!3d28.363708298907817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdc799aaeaad5%3A0x71eb9d0cbe091f12!2sArena%20Animation%20-%20Graphic%20%26%20Web%2C%20VFX%20and%20Gaming%2C%203D%20Max%20and%20Maya!5e0!3m2!1sen!2sin!4v1672492491514!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="form-control"></iframe>
+				</div>
+				<div class="col-sm-7 mt-4 ps-5">
+					<h2>Add Comment</h2>
+					<form method="POST" action="{% url 'Contact_Data' %}">
+					 {% csrf_token %}	
+					<div class="row">
+						<div class="col-sm-6">
+							{{form.name}}
+						</div>
+						<div class="col-sm-6">
+							{{form.email}}
+						</div>
+						<div class="col-sm-12 mt-4">
+							{{form.message}}
+						</div>
+						<div class="col-sm-12 text-end mt-4">
+							<button class="text-decoration-none py-2 pe-3 ps-2 bluz rounded-pill border-0" type="sumbit"><span class="me-5 circle3"><i class="fa fa-long-arrow-right blue"></i></span><span class="text-white pe-4 fs-5">Send Now</span></button>
+						</div>
+					</div>
+				    </form>
+				</div>
+				<div class="col-sm-5 mt-4 ps-5">
+					<h2>Our Contacts</h2>
+					<ul class="list-inline">
+						<li>
+							<div class="row">
+								<div class="col-sm-1 p-0">
+									<img src="/static/images/icon15.png" class="img-fluid">
+								</div>
+								<div class="col-sm-11">
+									<h5>Call</h5>
+									<p>+2 342 5446 67</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="row">
+								<div class="col-sm-1 p-0">
+									<img src="/static/images/icon16.png" class="img-fluid">
+								</div>
+								<div class="col-sm-11">
+									<h5>Work Time</h5>
+									<p>Mon - Fri 8 AM - 5 PM</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="row">
+								<div class="col-sm-1 p-0">
+									<img src="/static/images/icon17.png" class="img-fluid">
+								</div>
+								<div class="col-sm-11">
+									<h5>Address</h5>
+									<p>Franklin St, Greenpoint Ave</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--contact end-->
+
+
+{% include 'footer.html' %}
